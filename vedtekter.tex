@@ -50,8 +50,10 @@
 }
 
 \title{\Large{}Linjeforeningen Onlines\\\Huge{VEDTEKTER}}
-\date{18. april 2016}	% Dato for genfors der vedtektene ble oppdatert
-
+\date{
+18. april 2016  % Dato for genfors der vedtektene ble oppdatert
+\dobbelSignatur{Pia Lindkjølen}{Christoffer Lofsberg}  % Signaturlinjer for paraferer
+}
 
 \newenvironment{liste}{
 \begin{itemize}
@@ -91,6 +93,17 @@
 & \subsection*{#1}
 #2
 \end{tabularx}	
+}
+
+% Signaturlinjer for paraferer
+\newcommand{\dobbelSignatur}[2]{
+\vfill
+\centering
+\begin{tabular}{lcl}
+    \rule{5cm}{1pt} & \hspace{2cm} & \rule{5cm}{1pt} \\
+    #1, Parafer & & #2, Parafer \\
+\end{tabular}
+\vspace{1cm}
 }
 
 
